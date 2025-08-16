@@ -16,9 +16,23 @@
 AI に呼び出された時の挙動をツールに実装することがメインのイメージ
 
 ### サーバーの準備
+
 ```sh
 npm install
-npm run build 
+npm run build
+```
+
+### MCP の設定(Claude など)
+
+```json
+{
+  "mcpServers": {
+    "weather": {
+      "command": "node",
+      "args": ["/PATH/TO/mcp_tutorial/build/index.js"]
+    }
+  }
+}
 ```
 
 ### MPC サーバーのデバッグ
